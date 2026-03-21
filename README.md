@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# Shopping Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sistema web SPA (Single Page Application) moderno de gerenciamento focado em controle organizado de compras. Desenhado para maximizar a interface do usuário com a riqueza visual de componentes e com operações de alta velocidade por armazenamento em cache do browser sem requerer online persistente em banco em nuvem de imediato.
 
-## Available Scripts
+## 🚀 Estrutura e Ferramentas Modernas
 
-In the project directory, you can run:
+- **Material UI (MUI v6) & Emotion JS:** Biblioteca robusta usada para dar vida a inputs e painéis interativos padronizados e elegantes sem sacrificar acessibilidade. 
+- **React 19 & React Router 7:** Versões novíssimas dos utilitários de construção de interfaces orientadas por rotas virtuais.
+- **Dexie.js API:** Facilita grandemente a interação do código assíncrono perante o IndexedDB para banco persistido sem atritos ou perdas locais de sessão em requisições offline complexas.
+- **jsPDF:** Uma camada instalada especificamente para conversões rápidas de tabelas de gerenciantes ou nota física visual diretamente da tabela de estado ativa.
 
-### `npm start`
+## 📦 Como Desenvolver/Modificar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto foi reconfigurado com React-Scripts base e é bastante flexível nativamente.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Na raiz do projeto instale os pacotes e recursos:
+   ```bash
+   npm install
+   ```
+2. Inicialize o servidor HMR (Hot Module Replacement) nativo local de testes (`http://localhost:3000`):
+   ```bash
+   npm start
+   ```
+3. Qualquer modificação refletirá rapidamente na tela sem reload. A integração com Typescript `@types` também funciona nos fundos apontando detecção antecipada (estática) para IDEs (apesar do código primário aceito ser Javascript em muitos pontos).
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para gerar versões imutáveis para hosting (ex: S3, Firebase, Vercel ou Netlify):
+```bash
+npm run build
+```
+O framework minificará, eliminará arquivos e logs mortos colocando todos compactados em `build/`.
